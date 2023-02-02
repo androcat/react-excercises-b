@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import InfoForm from "./components/InfoForm";
 import { useState } from "react";
+import ContactsList from "./components/ContactsList";
 
 function App() {
   const [persons, setPerson] = useState([]);
@@ -10,7 +11,12 @@ function App() {
     setPerson([...persons, person]);
   };
 
-  return <InfoForm addPerson={addPerson} />;
+  return (
+    <div>
+      <InfoForm addPerson={addPerson} />
+      <ContactsList persons={persons} />
+    </div>
+  );
 }
 
 export default App;

@@ -78,7 +78,7 @@ function InfoForm({ addPerson }) {
             setPhoneNumber(e.target.value);
           }}
           className="form-control"
-          placeholder="Alex"
+          placeholder="5555555555"
         />
       </div>
       <button type="submit">Save</button>
